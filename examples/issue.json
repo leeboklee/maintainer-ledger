@@ -1,11 +1,11 @@
 {
   "html_url": "https://github.com/example/project/issues/42",
   "number": 42,
-  "title": "Add Korean electricity bill calculator",
-  "body": "Users want a calculator for tiered electricity pricing. It should support monthly kWh input, progressive tariff ranges, and a clear disclaimer when local rates change.",
+  "title": "Clarify Node 20 installation steps in the README",
+  "body": "Contributors are unsure which Node.js version is required. The README should mention Node 20, npm install, and how to run the local demo command.",
   "labels": [
     {
-      "name": "enhancement"
+      "name": "documentation"
     }
   ],
   "user": {

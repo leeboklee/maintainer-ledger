@@ -6,9 +6,9 @@ import process from "node:process";
 const demoPayload = {
   html_url: "https://github.com/example/project/issues/42",
   number: 42,
-  title: "Add Korean electricity bill calculator",
-  body: "Users want a calculator for tiered electricity pricing. It should support monthly kWh input, progressive tariff ranges, and a clear disclaimer when local rates change.",
-  labels: [{ name: "enhancement" }],
+  title: "Clarify Node 20 installation steps in the README",
+  body: "Contributors are unsure which Node.js version is required. The README should mention Node 20, npm install, and how to run the local demo command.",
+  labels: [{ name: "documentation" }],
   user: { login: "sample-contributor" },
   state: "open",
   pull_request: undefined,
@@ -18,10 +18,10 @@ const labelRules = [
   { label: "bug", words: ["bug", "broken", "crash", "error", "fail", "wrong", "regression"] },
   { label: "security", words: ["security", "xss", "csrf", "token", "secret", "vulnerability"] },
   { label: "docs", words: ["readme", "docs", "documentation", "typo", "guide"] },
-  { label: "release", words: ["release", "changelog", "version", "migration"] },
-  { label: "feature", words: ["feature", "add", "support", "enhancement", "new"] },
-  { label: "needs-info", words: ["unclear", "question", "how", "cannot reproduce"] },
-  { label: "calculator", words: ["calculator", "bill", "price", "rate", "tariff"] },
+  { label: "release", words: ["release", "changelog", "migration"] },
+  { label: "feature", words: ["feature", "add", "support", "enhancement"] },
+  { label: "needs-info", words: ["unclear", "question", "cannot-reproduce"] },
+  { label: "compatibility", words: ["node", "version", "runtime", "install", "setup"] },
   { label: "maintenance", words: ["refactor", "cleanup", "dependency", "ci", "test"] },
 ];
 
@@ -112,7 +112,7 @@ function recommendLabels(item) {
       labels.add(rule.label);
     }
   }
-  if (item.body.length < 120) labels.add("needs-info");
+  if (item.body.length < 120 && !labels.has("docs")) labels.add("needs-info");
   return [...labels].slice(0, 6);
 }
 

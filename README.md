@@ -15,7 +15,7 @@ GitHub 이슈나 PR 주소를 넣으면 아래 내용을 한 번에 정리합니
 - 답변 초안
 - 릴리스 노트 초안
 
-예를 들어 누가 "한국 전기세 계산기 기능을 추가해 주세요"라는 이슈를 올리면, 이 도구는 요청 내용을 요약하고 `feature`, `calculator` 같은 라벨을 추천하며, 관리자가 남길 답변 초안까지 만들어 줍니다.
+예를 들어 누가 "README에 Node 20 설치 방법을 더 명확히 적어 주세요"라는 이슈를 올리면, 이 도구는 요청 내용을 요약하고 `docs`, `compatibility` 같은 라벨을 추천하며, 관리자가 남길 답변 초안까지 만들어 줍니다.
 
 이 도구는 사람 대신 결정을 내리는 프로그램이 아닙니다. 관리자가 매번 반복해서 읽고 정리하는 시간을 줄여 주는 보조 도구입니다.
 
@@ -78,12 +78,12 @@ Example output:
 
 ```text
 Source: #42 issue
-Summary: Add Korean electricity bill calculator: Users want a calculator for tiered electricity pricing.
-Risk: medium (3)
-Labels: enhancement, feature, calculator
+Summary: Clarify Node 20 installation steps in the README: Contributors are unsure which Node.js version is required.
+Risk: low (1)
+Labels: documentation, docs, compatibility
 Next action: Confirm scope, label the issue, and invite a focused pull request.
-Reply draft: Thanks for the issue. This looks in scope; I marked it for enhancement, feature, calculator review.
-Release note: - Changed: Add Korean electricity bill calculator
+Reply draft: Thanks for the issue. This looks in scope; I marked it for documentation, docs, compatibility review.
+Release note: - Documentation: Clarify Node 20 installation steps in the README
 ```
 
 ## Use cases
@@ -96,7 +96,7 @@ Release note: - Changed: Add Korean electricity bill calculator
 
 ## Example maintainer scenario
 
-A public project receives an issue asking for a Korean electricity bill calculator. The maintainer runs:
+A public project receives an issue asking for clearer Node 20 installation instructions. The maintainer runs:
 
 ```bash
 maintainer-ledger https://github.com/owner/repo/issues/123
