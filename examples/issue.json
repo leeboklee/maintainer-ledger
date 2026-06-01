@@ -1,0 +1,15 @@
+{
+  "html_url": "https://github.com/example/project/issues/42",
+  "number": 42,
+  "title": "Add Korean electricity bill calculator",
+  "body": "Users want a calculator for tiered electricity pricing. It should support monthly kWh input, progressive tariff ranges, and a clear disclaimer when local rates change.",
+  "labels": [
+    {
+      "name": "enhancement"
+    }
+  ],
+  "user": {
+    "login": "sample-contributor"
+  },
+  "state": "open"
+}

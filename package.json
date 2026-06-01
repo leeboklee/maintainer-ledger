@@ -1,0 +1,25 @@
+{
+  "name": "maintainer-ledger",
+  "version": "0.1.0",
+  "description": "Evidence-first triage and release workflow CLI for open-source maintainers.",
+  "type": "module",
+  "bin": {
+    "maintainer-ledger": "./bin/maintainer-ledger.mjs"
+  },
+  "scripts": {
+    "demo": "node ./bin/maintainer-ledger.mjs --demo",
+    "check": "node ./bin/maintainer-ledger.mjs --file ./examples/issue.json"
+  },
+  "keywords": [
+    "open-source",
+    "maintainer",
+    "github",
+    "issue-triage",
+    "pull-request",
+    "release-notes"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
