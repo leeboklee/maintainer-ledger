@@ -2,6 +2,27 @@
 
 Evidence-first triage and release workflow for open-source maintainers.
 
+## 한국어 설명
+
+Maintainer Ledger는 오픈소스 관리자가 GitHub 이슈와 Pull Request를 빠르게 판단하도록 도와주는 작은 터미널 도구입니다.
+
+GitHub 이슈나 PR 주소를 넣으면 아래 내용을 한 번에 정리합니다.
+
+- 어떤 요청인지 짧은 요약
+- 붙이면 좋은 라벨
+- 위험도
+- 다음에 할 일
+- 답변 초안
+- 릴리스 노트 초안
+
+예를 들어 누가 "한국 전기세 계산기 기능을 추가해 주세요"라는 이슈를 올리면, 이 도구는 요청 내용을 요약하고 `feature`, `calculator` 같은 라벨을 추천하며, 관리자가 남길 답변 초안까지 만들어 줍니다.
+
+이 도구는 사람 대신 결정을 내리는 프로그램이 아닙니다. 관리자가 매번 반복해서 읽고 정리하는 시간을 줄여 주는 보조 도구입니다.
+
+Codex for OSS 신청용으로는 "오픈소스 메인테이너의 이슈 분류, PR 검토, 릴리스 준비 시간을 줄이는 프로젝트"라는 명분으로 설명할 수 있습니다.
+
+## English
+
 Maintainer Ledger is a small CLI for open-source maintainers who need a fast first pass on GitHub issues and pull requests.
 
 It turns a GitHub issue or PR URL into:
